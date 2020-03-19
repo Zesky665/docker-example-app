@@ -1,0 +1,58 @@
+
+
+<pre id="ping">
+          ,;;;!!!!!;;.
+        :!!!!!!!!!!!!!!;
+      :!!!!!!!:.--.:!!!!;
+     ;!!!!!!!!(    )!!!!!;
+    ;!!!!!!!!!:`--':!!!!!!
+    ;!!!!!!!!!!!!!!!!!!!!'
+    ;!!!!!!!!!!!!!!!!!!!'
+     :!!!!!!!!!!!!!!!!'
+     ;!!!!!!!!!!!!!!'
+   ,;!!!!'''''''''
+ .!!!!'
+!!!!
+
+</pre>
+
+<pre id="pong" style="display: none;">
+                         
+                       .::::::::.
+                     .'::::::::::`,
+                    .:::::::.--.:::`,
+                   .:::::::(    ):::,
+                   :::::::::`--':::::
+                   ::::::::::::::::::
+                   `::::::::::::::::`
+                    `:::::::::::::::
+                     `::::::::::::'
+                       `-.::::.-'
+                          ::::
+                          ::::
+                          ::::      
+                          "--"
+</pre>
+<script>
+console.log("Hi")
+
+var myVar = setInterval(pingPong, 2000);
+
+
+
+function pingPong() {
+  var ping = document.getElementById("ping");
+  var pong = document.getElementById("pong");
+
+  if (ping.style.display === 'none') {
+    ping.style.display = 'block';
+    pong.style.display = 'none';
+    console.log("ping")
+  } else {
+    ping.style.display = 'none';
+    pong.style.display = 'block';
+    console.log("pong")
+  }
+
+}
+</script>
